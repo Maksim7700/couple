@@ -17,10 +17,4 @@ import java.util.List;
 public class AdminController {
 
     @Autowired private UserRepository userRepository;
-
-    @GetMapping("/auth/admin")
-    private ResponseEntity<List<User>> getUsers() {
-
-        return ResponseEntity.ok(userRepository.findAll());
-    }
 }
