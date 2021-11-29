@@ -28,7 +28,6 @@ public class JWTAuteticatedFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
 
-
         String authToken=jwtTokenHelper.getToken(request);
         if(null!=authToken) {
             String userName=jwtTokenHelper.getUsernameFromToken(authToken);
