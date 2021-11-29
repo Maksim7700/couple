@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
 public class JWTAuteticatedFilter extends OncePerRequestFilter {
     private final UserDetailsService userDetailsService;
     private final JWTTokenHelper jwtTokenHelper;
